@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+}
+
+body {
+  font-weight: 400;
+}
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.header {
+  background-color: #4B566A;
+  color: #c4c4c4;
+}
+
+.menu {
+  flex: 1;
+}
+
+.logo {
+  height: 120px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+}
