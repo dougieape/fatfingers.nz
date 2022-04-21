@@ -46,7 +46,7 @@ p {
   margin:auto;
 }
 
-@media screen and (max-width: 549px) {
+@media only screen and (max-width: 549px) {
   .hero.row {
     flex-direction: column;
   }
