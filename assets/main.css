@@ -145,7 +145,7 @@ p {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2,auto);
-  gap: 10px;
+  column-gap: 10px;
 }
 
 button {
@@ -200,4 +200,20 @@ button {
     text-align: left;
   }
   
+}
+
+@media screen and (max-width: 550px) {
+  #blur-text {
+    width: unset;
+  }
+
+  #text1,#text2 {
+    width: 150px;
+  }
+  .company-text h1 {
+    font-size: 2rem;
+  }
+  .logo {
+    height: 80px;
+  }
 }
