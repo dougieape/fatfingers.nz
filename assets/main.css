@@ -1,7 +1,9 @@
 * {
   margin: 0;
-  font-family: 'Quattrocento Sans', sans serif;
+  padding: 0;
+  font-family: 'Poppins', sans serif;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,15 +11,15 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Abril Fatface', serif;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.4rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding-bottom: 1rem;
 }
 
@@ -33,6 +35,30 @@ p {
   padding-bottom: .5rem;
 }
 
+.background--orange {
+  background-color: orange;
+}
+
+.background--purple {
+  background-color: #4a3976;
+}
+
+.text--white {
+  color: white;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.hide {
+  display: none!important;
+}
+
+.row__container {
+  width: 100%;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -41,9 +67,27 @@ p {
   padding: 40px;
 }
 
+.row--tall {
+  min-height: 70vh;
+}
+
 .hero.row {
   max-width:800px;
   margin:auto;
+}
+
+.hero.row img {
+  max-width: 100%;
+}
+
+.margin--vertical {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.column--narrow {
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 549px) {
@@ -61,8 +105,8 @@ p {
 }
 
 .header {
-  background-color: #4B566A;
-  color: #c4c4c4;
+  background-color: #fff;
+  color: #F89621;
 }
 
 .menu {
@@ -70,7 +114,8 @@ p {
 }
 
 .logo {
-  height: 80px;
+  height: 120px;
+  position: absolute;
 }
 
 .logo img {
@@ -86,6 +131,17 @@ p {
   width: 100%;
 }
 
+.company-text {
+  width: 100%;
+}
+
+.company-text h1 {
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+
 button {
   background-color: #4b566a;
   color: #fff;
@@ -93,4 +149,29 @@ button {
   margin: 1rem 0;
   border-radius: 0.2rem;
   font-size: 1.2rem;
+}
+
+#blur-text {
+  filter: url(#threshold) blur(0px);
+  width: 340px;
+  display: inline-block;
+  height: 3.4rem;
+}
+
+#text,#text1,
+#text2 {
+    position: absolute;
+    width: 340px;
+    display: inline-block;
+
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: 400;
+    text-align: right;
+    color: #703363;
+
+    user-select: none;
+}
+
+#filters {
+  display: none;
 }

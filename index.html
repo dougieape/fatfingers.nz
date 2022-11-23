@@ -9,23 +9,84 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Raleway+Dots&family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?&family=Azeret+Mono:wght@400;700;900&family=Poppins&family=Abril+Fatface&family=Bitter:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Raleway+Dots&family=Raleway:ital,wght@0,400;0,600;0,700;1,600;1,700&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/main.css">
   </head>
   <body>
     <div class="header row">
       <div class="logo">
-        <img src="./assets/ff-logo.svg" alt="">
+        <img src="./assets/ff-hand.svg" alt="">
       </div>
       <div class="company-text">
-        <h1>Fat Fingers</h1>
-        <h3>Web Design Co</h3>
+        <h1>
+          <span id="blur-text">
+            <span id="text1"></span>
+            <span id="text2"></span>
+          </span>
+          Fat Fingers
+        </h1>
       </div>
+    </div>
+
+      <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
+            </filter>
+        </defs>
+      </svg>
+
       <div class="menu">
 
       </div>
     </div>
-    <div class="hero row">
+    <div class="hero row row--tall">
+      <div class="hero-text column--narrow">
+        <h2>The mobile phone experience has a remarkable influence on SEO.</h2>
+        <p>62% of all website traffic comes from people using mobile devices.  Yet many sites’ SEO performance is impacted by a high bounce rate from mobile users.</p>
+        <p>How your business looks on a small screen will influence its success at least as much as its performance on desktop.</p>
+      </div>
+    </div>
+
+    <div class="row__container background--orange text--white">
+      <div class="hero row row--tall">
+        <div class="hero-image">
+          <img src="./assets/pexels-cottonbro-5076516.png" alt="">
+        </div>
+        <div class="hero-text">
+          <h2>We’re all about the small details</h2>
+          <p>Our experience allows us to focus on the details that matter to save time and target the goals that matter, like conversion rates and revenue.</p>
+          <a href="mailto:fatfingers@email.com"><button type="button" name="email">Get your fix for Small Screens</button></a>
+        </div>
+      </div>  
+    </div>
+
+    <div class="hero row row--tall">
+      <div class="hero-text column--narrow">
+        <h2>Fat Fingers - what’s in a name?</h2>
+        <img class="margin--vertical" src="./assets/ruler.svg" alt="">
+        <p>The specialty of Ergonomics guides us to design so that the small person can reach, and the large person can fit.  Extending this to the constrained space of a mobile phone means striking a balance between the density and simplicity of information and of course making sure touch points are large enough for fat fingers.</p>
+      </div>
+    </div>
+
+    <div class="row__container background--purple text--white">
+      <div class="hero row row--tall">
+        <div class="hero-image">
+          <img src="./assets/fprint.svg" alt="">
+        </div>
+        <div class="hero-text">
+          <h2>Every fingerprint of space is valuable</h2>
+          <p>In constrained screens there is no room for wasted space.  We need to know what content engages customers and promote it ahead of content that doesn’t.  Mobile-first design coupled with solid analytics is vital to monitor and maximise the power of every pixel. </p>
+          <a href="mailto:fatfingers@email.com"><button type="button" name="email">Get started with an Analytics audit</button></a>
+          <a href="mailto:fatfingers@email.com"><button type="button" name="email">Arrange a Tune Up</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero row hide">
       <div class="hero-image">
         <img src="./assets/eye.png" alt="">
       </div>
@@ -36,7 +97,7 @@
         <a href="mailto:fatfingers@email.com"><button type="button" name="email">We do that</button></a>
       </div>
     </div>
-    <div class="hero row">
+    <div class="hero row hide">
       <div class="hero-text">
         <h2>Successful websites are founded on good data</h2>
         <p>Audience analytics give you a clear idea of what works well on your website, and crucially what doesn't.</p>
@@ -50,6 +111,7 @@
     <div class="rich-text">
 
     </div>
+    <script src="./assets/main.js"></script>
 
   </body>
 </html>
