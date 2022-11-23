@@ -1,7 +1,9 @@
 * {
   margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans serif;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,8 +39,24 @@ p {
   background-color: orange;
 }
 
+.background--purple {
+  background-color: #4a3976;
+}
+
 .text--white {
   color: white;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.hide {
+  display: none!important;
+}
+
+.row__container {
+  width: 100%;
 }
 
 .row {
@@ -49,12 +67,25 @@ p {
   padding: 40px;
 }
 
+.row--tall {
+  min-height: 70vh;
+}
+
 .hero.row {
   max-width:800px;
   margin:auto;
 }
 
-.narrow-column {
+.hero.row img {
+  max-width: 100%;
+}
+
+.margin--vertical {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.column--narrow {
   max-width: 650px;
   margin: 0 auto;
 }
@@ -107,6 +138,8 @@ p {
 .company-text h1 {
   max-width: 650px;
   margin: auto;
+  display: flex;
+  gap: 10px;
 }
 
 button {
@@ -116,4 +149,29 @@ button {
   margin: 1rem 0;
   border-radius: 0.2rem;
   font-size: 1.2rem;
+}
+
+#blur-text {
+  filter: url(#threshold) blur(0px);
+  width: 340px;
+  display: inline-block;
+  height: 3.4rem;
+}
+
+#text,#text1,
+#text2 {
+    position: absolute;
+    width: 340px;
+    display: inline-block;
+
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: 400;
+    text-align: right;
+    color: #703363;
+
+    user-select: none;
+}
+
+#filters {
+  display: none;
 }
