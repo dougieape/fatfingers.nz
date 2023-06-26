@@ -4,8 +4,9 @@ const elts = {
 };
 
 const texts = [
-    "Designed for",
-    "Developed by"
+    "analyse",
+    "design",
+    "build"
 ];
 
 const morphTime = 1;
