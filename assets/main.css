@@ -60,6 +60,10 @@ p {
   text-align: center;
 }
 
+.text--bold {
+  font-weight: bold;
+}
+
 .hide {
   display: none!important;
 }
@@ -273,6 +277,10 @@ button {
     background: top center / cover no-repeat url(footer-mobile.png);
     aspect-ratio: 0.486;
   }  
+
+  .width-40 {
+    width: unset;
+  }
 }
 
 @media screen and (max-width: 550px) {
