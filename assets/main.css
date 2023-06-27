@@ -10,7 +10,7 @@ body {
   font-weight: 400;
 }
 
-h1, h2 {
+h1, h2, h2 span {
   font-family: 'Abril Fatface', serif;
 }
 
@@ -20,11 +20,12 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2.5rem;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 h4 {
@@ -36,15 +37,23 @@ p {
 }
 
 .background--orange {
-  background-color: orange;
+  background-color: #F89621;
 }
 
 .background--purple {
-  background-color: #4a3976;
+  background-color: #703363;
 }
 
 .text--white {
   color: white;
+}
+
+.text--orange {
+  color: #F89621;
+}
+
+.text--purple {
+  color: #703363;
 }
 
 .text--center {
@@ -57,6 +66,9 @@ p {
 
 .row__container {
   width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 60px 40px;
 }
 
 .row {
@@ -69,6 +81,12 @@ p {
 
 .row--tall {
   min-height: 70vh;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .hero.row {
@@ -110,7 +128,7 @@ p {
 
 .header.row {
   display: grid;
-  grid-template-columns: minmax(100px,1fr) minmax(auto,800px) minmax(100px,1fr);
+  grid-template-columns: minmax(100px,1fr) minmax(auto,620px) minmax(100px,1fr);
   grid-template-rows: auto 1fr;
   background: top center / cover no-repeat url(hero-desktop.png);
   aspect-ratio: 1.5;
@@ -225,6 +243,10 @@ button {
   }
   .hero-text h2 {
     padding-bottom: 24px;
+  }
+
+  .cols {
+    grid-template-columns: none;
   }
 }
 
