@@ -108,6 +108,10 @@ p {
   margin: 0 auto;
 }
 
+.width-40 {
+  width: 40%;
+}
+
 @media only screen and (max-width: 549px) {
   .hero.row {
     flex-direction: column;
@@ -135,6 +139,21 @@ p {
   padding: 15% 40px 6%;
 }
 
+.footer {
+  background: top center / cover no-repeat url(footer-desktop.png);
+  aspect-ratio: 1.5;
+  position: relative;
+  height: 100%;
+}
+
+.footer__cta {
+  position: absolute;
+  bottom: 40px;
+}
+
+button {
+  cursor: pointer;
+}
 
 .menu {
   flex: 1;
@@ -172,11 +191,12 @@ p {
 }
 
 button {
-  background-color: #4b566a;
+  background-color: #F89621;
   color: #fff;
   padding: 1rem;
   margin: 1rem 0;
-  border-radius: 0.2rem;
+  border: none;
+  border-radius: 1rem;
   font-size: 1.2rem;
 }
 
@@ -248,6 +268,11 @@ button {
   .cols {
     grid-template-columns: none;
   }
+
+  .footer {
+    background: top center / cover no-repeat url(footer-mobile.png);
+    aspect-ratio: 0.486;
+  }  
 }
 
 @media screen and (max-width: 550px) {
