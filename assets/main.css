@@ -29,7 +29,7 @@ h3 {
 }
 
 h4 {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -66,6 +66,10 @@ p {
 
 .hide {
   display: none!important;
+}
+
+.overflow-hide {
+  overflow: hidden;
 }
 
 .row__container {
@@ -168,8 +172,12 @@ button {
   justify-self: flex-end;
 }
 
-.logo img {
+.logo img, .logo--small img {
   height: 100%;
+}
+
+.logo--small {
+  height: 60px;
 }
 
 .hero-image {
@@ -202,6 +210,7 @@ button {
   border: none;
   border-radius: 1rem;
   font-size: 1.2rem;
+  width: 100%;
 }
 
 #blur-text {
@@ -227,6 +236,41 @@ button {
   display: none;
 }
 
+.jelly{
+  position: absolute;
+  top: calc(100% - 200px);
+  left: calc(100% - 400px);
+  overflow: hidden;
+  background-color: white;
+  animation: aniwidth 10s infinite,
+    aniheight 6s 1s infinite,
+    anicurve 4s infinite;
+}
+
+.jelly__text {
+  position: relative;
+  left: 100px;
+  top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+@keyframes aniwidth {
+  0% {width: 2800px;}
+  50% {width: 3200px;}
+  100% {width: 2800px;}
+}
+@keyframes aniheight {
+  0% {height:1300px;}
+  50% {height: 1500px;}
+  100% {height:1300px;}
+}
+@keyframes anicurve {
+  0% {border-top-left-radius: 14%}
+  50% {border-top-left-radius: 15%}
+  100% {border-top-left-radius: 14%}
+}
 
 @media screen and (max-width: 900px) {
   html {
@@ -278,9 +322,26 @@ button {
     aspect-ratio: 0.486;
   }  
 
+  .footer__cta {
+    bottom: 20%;
+    width: calc(100% - 80px);
+  }
+
   .width-40 {
     width: unset;
   }
+
+  .jelly{
+    top: calc(100% - 140px);
+    left: calc(100% - 320px);
+  }
+  
+  .jelly__text {
+    left: 100px;
+    top: 60px;
+    gap: 10px;
+  }
+  
 }
 
 @media screen and (max-width: 550px) {
