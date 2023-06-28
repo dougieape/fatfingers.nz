@@ -159,6 +159,23 @@ p {
   bottom: 40px;
 }
 
+.fingerprint-section {
+  background: top center / cover no-repeat url(fingerprint-desktop.png);
+  aspect-ratio: 1.5;
+  position: relative;
+  height: 100%;
+  text-align: right;
+}
+
+.fingerprint-section .width-40 {
+  margin-left: auto;
+}
+
+.fingerprint__cta {
+  position: relative;
+  top: 100px;
+}
+
 button {
   cursor: pointer;
 }
@@ -325,6 +342,21 @@ button {
   .footer__cta {
     bottom: 20%;
     width: calc(100% - 80px);
+  }
+
+  .fingerprint-section {
+    background: top center / cover no-repeat url(fingerprint-mobile.png);
+    aspect-ratio: 0.513;
+    text-align: left;
+  }
+
+  .fingerprint-section .hero {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .fingerprint__cta {
+    top: 0;
   }
 
   .width-40 {
